@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { Footer } from './components/Footer'
 import { Navbar } from './components/Navbar'
+import { AboutPage } from './pages/AboutPage'
 import { HomePage } from './pages/HomePage'
 
 function PlaceholderPage({ title }: { title: string }) {
@@ -24,6 +25,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/trainers" element={<PlaceholderPage title="Find Trainers" />} />
         <Route path="/messages" element={<PlaceholderPage title="Messages" />} />
         <Route path="/dashboard" element={<PlaceholderPage title="Dashboard" />} />
